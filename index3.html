@@ -1,0 +1,67 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="curve.js"></script>
+    <script type="text/javascript" src="posts.js"></script>
+
+    <script async="" defer="" data-domain="skalnik.com" src="https://plausible.io/js/plausible.js"></script>
+
+    <link href="https://micro.blog/skalnik" rel="me">
+
+    <title>skalnik</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>
+            <canvas id="curve" width="1380" height="394"><img src="skalnik.svg" alt="skalnik">skalnik</canvas>
+          </h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <a class="p-1" href="https://github.com/skalnik">github.com/skalnik</a>
+            </li>
+            <li class="nav-item">
+              <a class="p-1" href="https://micro.skalnik.com">microblog</a>
+            </li>
+            <li class="nav-item">
+              <a class="p-1" href="mailto:mike@skalnik.com">mike@skalnik.com</a>
+            </li>
+            <li class="nav-item">
+              <a class="p-1" href="resume.html">resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <ul id="js-posts" class="posts list-unstyled m-5"></ul>
+        </div>
+      </div>
+    </div>
+  
+  <script id="js-post-template" type="text/template">
+    <li class="post pt-2">
+      <h5 class="title">
+        <a href="{{url}}">{{title}}</a>
+      </h5>
+      <small>
+        <time class="text-muted">{{time}}</time>
+        <a class="text-muted" href="{{url}}">#</a>
+      </small>
+      <div>
+        {{content}}
+      </div>
+    </li>
+  </script>
+
+</body></html>
